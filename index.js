@@ -1,3 +1,5 @@
+// Reproductor de música elegante
+
 $(function () {
     var playerTrack = $("#player-track"),
       albumArt = $("#album-art"),
