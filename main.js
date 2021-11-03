@@ -8,7 +8,8 @@ function onYouTubeIframeAPIReady() {
     a.setAttribute("id", "youtube-player"), e.appendChild(a);
     var o = function(e) {
         var a = e ? "JlG53Df.png" : "2hKQNQ1.png";
-        t.setAttribute("src", "https://i.imgur.com/" + a)
+        t.setAttribute("src", "https://i.imgur.com/" + a);
+        t.style.maxWidth = "100px";
     };
     e.onclick = function() {
         r.getPlayerState() === YT.PlayerState.PLAYING || r.getPlayerState() === YT.PlayerState.BUFFERING ? (r.pauseVideo(), o(!1)) : (r.playVideo(), o(!0))
